@@ -1,0 +1,296 @@
+﻿
+/*для больших экранов*/
+
+@media only screen and (max-width: 1200px){
+
+}
+/*Medium Для средних экранов*/
+
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 950px){
+    .footer .logo{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 820px){
+    .footer__blocks .company{
+        margin-right: 40px;
+    }
+}
+/*Smal для маленьких экранов*/
+@media only screen and (max-width: 768px){
+    .promo{
+        background: 
+    url(../img/promo/promoLeftTop2.png) no-repeat -50px 137px,
+    url(../img/promo/promoRightTop.png) no-repeat 100% 100px,
+    url(../img/promo/promoLeftBottom.png) no-repeat 0px 560px,
+    url(../img/promo/promoRightBottom.png) no-repeat 105% 110%;
+    background-size: 275px 120px, 270px, 130px, 210px;
+    }
+    .promo__wrap{
+        padding-top: 0;
+        justify-content: center;
+    }
+    .promo__title{
+        text-align: center;
+    }
+    .pregnant{
+        padding: 35px 20px;
+        min-height: 400px;
+    }
+    .pregnant-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .pregnant__text{
+        text-align: center;
+    }
+    .program{
+        padding: 50px 20px;
+    }
+    .program__block {
+        width: 30%;
+    }
+    .program__text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .pranayama{
+        background: 
+    url(../img/body2/FloralRightTop.png) no-repeat 1155px 30px,
+    url(../img/body2/body2Leftbottom.png) no-repeat -7% 115%;
+        padding: 20px;
+    }
+    .pranayama__blocks{
+        flex-direction: column;
+    }
+    .pranayama__text, .pranayama__foto {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    .pranayama__foto{
+        order: 0;
+    }
+    .pranayama__text{
+        order: 1;
+    }
+    .wrap{
+        justify-content: center;
+    }
+    .Join__text {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .Gallery{
+        background: url(../img/Galery/rightTop.png) no-repeat 118% -7%;
+    }
+    .Gallery__block{
+        width: 220px;
+    }
+    .Gallery__img {
+        height: 220px;
+    }
+    .video {
+        padding: 0px 20px 20px;
+    }
+    .video__bloks{
+        flex-direction: column;
+    }
+    .video__blok-video,.video__text{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    .video__blok-video{
+        order: 1;
+    }
+    .video__blok-video img{
+        height: 100%;
+    }
+    .video__text{
+        order: 0;
+    }
+    .video__social {
+        margin:0 auto 50px;
+    }
+    .footer{
+        padding: 60px 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .header .fa-bars{
+        display: block;
+    }
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f1f0ee;
+        z-index: 100;
+        padding: 50px;
+        overflow: auto;
+        transform: scale(0);
+        transition: .5s;
+        &-activ{
+            transform: scale(1); 
+        }
+    }
+    .header__nav .fa-times-circle{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        font-size: 30px;
+    }
+    .header__nav a {
+        font-size: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 736px){
+    html{
+        font-size: 14px;
+    }
+    .footer__block {
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width: 667px){
+    .Gallery__block {
+        width: 190px;
+    }
+    .Gallery__img {
+        height: 170px;
+    }
+    .Gallery__text {
+        padding: 40px 2px;
+    }
+}
+@media only screen and (max-width: 598px){
+    .Gallery__block {
+        width: 175px;
+    }
+    .footer__block {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 568px){
+    .footer__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer__block{
+        margin-bottom: 30px;
+    }
+    .Gallery {
+        background: url(../img/Galery/rightTop.png) no-repeat 127% -7%;
+    }
+}
+/*Exstra Smal для супер маленьких экранов*/
+@media only screen and (max-width: 480px){
+    .program__img {
+        height: 70px;
+    }
+    .Join{
+        background: #f1f0ee url(../img/body3/body3Main.jpg) no-repeat 0 98%;
+    background-size: 100%;
+    }
+    .Gallery{
+        padding: 50px 20px;
+        background: url(../img/Galery/rightTop.png) no-repeat 137% -7%;
+    }
+    .Gallery__block-one::before {
+        content: "";
+        width: 150px;
+        height: 340px;
+        position: absolute;
+        top: -230px;
+        left: -50px;
+        background: url(../img/Galery/Floral10.png) no-repeat;
+        z-index: -1;
+        opacity: 0;
+    }
+    .Gallery__blocks {
+        flex-wrap: wrap;
+    }
+    .Gallery__block{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .Gallery__img {
+        height: 446px;
+    }
+    .video h2{
+        font-size: 2rem;
+    }
+    .video__blok-video {
+        height: 290px;
+    }
+}
+
+/*Для Iphon*/
+@media only screen and (max-width: 375px){
+    .pregnant {
+        background: url(../img/body1/body1Fon.jpg) no-repeat left;
+        background-size: cover;
+        padding: 20px 10px;
+    }
+    .program__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .program__block{
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .program__img {
+        height: 131px;
+    }
+    .titleH22{
+        font-size: 2rem;
+    }
+    .video__blok-video {
+        height: 250px;
+    }
+    .Gallery__img {
+        height: 331px;
+    }
+    .Touch {
+        background: url(../img/Touch/leftTop.png) no-repeat -105px 140px, url(../img/Touch/rightBottom.png) no-repeat 1010px 525px, url(../img/Touch/rightTop.png) no-repeat 170% -8%, url(../img/Touch/leftBottom.png) no-repeat -141% 105%;
+    }
+    .ScrollTop{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .promo {
+        background: url(../img/promo/promoLeftTop2.png) no-repeat -173px 137px, url(../img/promo/promoRightTop.png) no-repeat 160% 100px, url(../img/promo/promoLeftBottom.png) no-repeat 0px 560px, url(../img/promo/promoRightBottom.png) no-repeat 105% 110%;
+        background-size: 275px 120px, 270px, 130px, 210px;
+    }
+    .Join__text {
+        padding: 50px 0px;
+    }
+    .Gallery {
+        background: url(../img/Galery/rightTop.png) no-repeat 221% -7%;
+    }
+    .Gallery__img {
+        height: 269px;
+    }
+    .video {
+        padding: 0px 0px 20px;
+    }
+    .Touch {
+        background: url(../img/Touch/leftTop.png) no-repeat -105px 140px, url(../img/Touch/rightBottom.png) no-repeat 1010px 525px, url(../img/Touch/rightTop.png) no-repeat 250% -8%, url(../img/Touch/leftBottom.png) no-repeat -141% 105%;
+    }
+}
